@@ -1,0 +1,40 @@
+.logout{     
+    background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%);
+    backdrop-filter: blur(30px);
+    top: 80px;
+    right: 1.2rem;
+    width: 13rem;
+    height: 20.5rem;
+    animation: profileModal .7s;
+}
+
+.logout .container .profile{
+    font-size: 7rem;
+}
+.logout .container .user-name{
+    width:13rem;
+    font-size:1.2rem;
+}
+
+.logout .container .list-it{
+    width: 120%;
+    font-size: 1.1rem;
+    background-color: #E9F9FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    cursor: pointer;
+    margin: 6px 0;
+}
+@keyframes profileModal {
+    0%{
+        width: 0;
+        height: 0;
+        content-visibility: hidden;
+    }
+    75%{
+        content-visibility: hidden;
+    }
+}
