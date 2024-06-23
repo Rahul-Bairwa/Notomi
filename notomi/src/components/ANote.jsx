@@ -12,10 +12,10 @@ const ANote = ({ note }) => {
     const { setShowModal, setEditedNote,singleNoteDetail, setSingleNoteDetail} = useContext(editContext)
     const modalVisiblity = (e) => {
         setEditedNote(e)
-        setShowModal(singleData)
+        setShowModal(singleNoteDetail)
     }
     const handleSingleNote=()=>{
-        setSingleNoteDetail(note.description)
+        setSingleNoteDetail({...note})
         navigate('/singlenote')
     }
     // console.log(singleNoteData)
